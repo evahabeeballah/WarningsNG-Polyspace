@@ -10,12 +10,16 @@ pipeline{
     stages {
 
     stage ('Checkout') {
+        steps{
         checkout scm
+        }
     }
     stage ('Git mining') {
+        steps{
         discoverGitReferenceBuild()
         mineRepository()
         gitDiffStat()
+        }
     }
 
         stage ('Static Analysis') {
