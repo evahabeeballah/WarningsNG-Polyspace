@@ -24,7 +24,7 @@ pipeline{
 
         stage ('Static Analysis') {
             steps{
-            recordIssues enabledForFailure: true, tool: Polyspace(pattern: '**/*.csv')
+            recordIssues enabledForFailure: true, tool: cadence(pattern: '**/*.csv')
             
             }
         }
