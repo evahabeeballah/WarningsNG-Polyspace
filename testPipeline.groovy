@@ -24,7 +24,7 @@ pipeline{
 
         stage ('Static Analysis') {
             steps{
-            recordIssues enabledForFailure: true, tool: io.jenkins.plugins.analysis.warnings.Polyspace(pattern: '**/*.csv')
+            recordIssues enabledForFailure: true, tool: Polyspace(pattern: '**/*.csv')
             
             }
         }
