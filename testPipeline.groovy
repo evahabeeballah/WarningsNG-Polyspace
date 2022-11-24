@@ -25,6 +25,7 @@ pipeline{
         stage ('Static Analysis') {
             steps{
             recordIssues enabledForFailure: true, tool: PolyspaceParse(pattern: '**/*.csv')
+            recordIssues enabledForFailure: true, tool: SimulinkCheckParse(pattern: '**/*.html')
             
             }
         }
