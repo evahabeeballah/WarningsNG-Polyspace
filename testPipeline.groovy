@@ -1,6 +1,7 @@
 pipeline{
     agent {
-    node('java11-agent')
+    //node('java11-agent')
+    node('Built-In Node')
     }
 
     environment {
