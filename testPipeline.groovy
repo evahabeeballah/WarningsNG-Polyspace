@@ -1,8 +1,7 @@
 pipeline{
-    agent {
+    //agent {
     //node('java11-agent')
-    node('Built-In Node')
-    }
+    //}
 
     environment {
         repo = "C:/Users/eva.allah/Desktop"
